@@ -29,17 +29,21 @@ function App() {
         onChange={(e) => setUserInput(e.target.value)}
         placeholder="Enter A Number within 1 and 200"
       />
-
-      <ul>
-        {checkedNum.map((item) => (
-          <div>
-            <h2>Your typed Number is - {userInput}</h2>
-            <p key={item.id}>
-              <strong>The Title of the Item is</strong> - " {item.title} ".
-            </p>
-          </div>
-        ))}
-      </ul>
+      {checkedNum.map((item) => (
+        <div className="userData">
+          <h2>Your typed Number is - {userInput}</h2>
+          <h3 key={item.id}>
+            <strong>The Title of the Item is</strong> - " {item.title} ".
+          </h3>
+        </div>
+      ))}
+      {apiData.map((item) => (
+        <div>
+          <h3>
+            {item.id}. {item.title}
+          </h3>
+        </div>
+      ))}
     </div>
   );
 }

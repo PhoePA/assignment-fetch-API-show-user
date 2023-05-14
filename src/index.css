@@ -1,5 +1,5 @@
 body {
-  text-align: center;
+  text-align: start;
   background-color: grey;
   color: yellow;
   margin: 5rem;
@@ -14,11 +14,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+input,
+.userData {
+  text-align: center;
+}
 
 input {
-  margin: 5px;
+  margin: 5px 0 5px 20%;
   padding: 15px;
   font-size: 20px;
   width: 50%;
+  border-radius: 5px;
+}
+
+.userData {
+  border: 2px dotted red;
+  padding: 10px;
+  margin: 9px;
   border-radius: 5px;
 }
